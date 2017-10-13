@@ -10,7 +10,7 @@ namespace ExternalMergeSort
     {
         public uint[] Data;
 
-        public Block(int size, uint? initializer = null)
+        public Block(uint size, uint? initializer = null)
         {
             Data = new uint[size];
             Random rng = new Random();

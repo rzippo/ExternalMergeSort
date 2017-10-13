@@ -15,7 +15,7 @@ namespace ExternalMergeSort
 
             public Block Block;
 
-            public BufferBlock(int blockSize)
+            public BufferBlock(uint blockSize)
             {
                 Valid = false;
                 Block = new Block(blockSize, 0);
@@ -24,7 +24,7 @@ namespace ExternalMergeSort
 
         public BufferBlock[] BufferBlocks;
 
-        public Buffer(int nBlocks, int blockSize)
+        public Buffer(uint nBlocks, uint blockSize)
         {
             BufferBlocks = new BufferBlock[nBlocks];
             for (int i = 0; i < nBlocks; i++)

@@ -8,7 +8,7 @@ namespace ExternalMergeSort
 {
     class Buffer
     {
-        internal class BufferBlock
+        internal class BufferBlock  //For now unused for simplification
         {
             public bool Valid;
             //Add MRU data?
@@ -22,14 +22,17 @@ namespace ExternalMergeSort
             }
         }
 
-        public BufferBlock[] BufferBlocks;
+        public Block[] BufferBlocks;
+        internal readonly long nBlocks;
 
         public Buffer(uint nBlocks, uint blockSize)
         {
-            BufferBlocks = new BufferBlock[nBlocks];
+            this.nBlocks = nBlocks;
+
+            BufferBlocks = new Block[nBlocks];
             for (int i = 0; i < nBlocks; i++)
             {
-                BufferBlocks[i] = new BufferBlock(blockSize);
+                BufferBlocks[i] = new Block(blockSize);
             }
         }
     }

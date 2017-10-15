@@ -43,9 +43,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Block.cs" />
-    <Compile Include="Buffer.cs" />
+    <Compile Include="SortBuffer.cs" />
     <Compile Include="File.cs" />
-    <Compile Include="Program.cs" />
+    <Compile Include="MergeBuffer.cs" />
+    <Compile Include="ProgramInterface.cs" />
+    <Compile Include="ExternalMergeSort.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

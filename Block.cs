@@ -9,6 +9,7 @@ namespace ExternalMergeSort
     class Block
     {
         public uint[] Data;
+        public int Size => Data.Length;
 
         public Block(uint size, uint? initializer = null)
         {
@@ -18,6 +19,15 @@ namespace ExternalMergeSort
             {
                 Data[i] = initializer ?? (uint) rng.Next();
             }
+        }
+
+        static public void transferBlock(Block source, Block destination)
+        {
+            if (source == null || destination == null || source.Data.Length != destination.Data.Length)
+                throw new Exception("Bad transfer");
+
+            for (int index = 0; index < source.Data.Length; index++)
+                destination.Data[index] = source.Data[index];
         }
     }
 }

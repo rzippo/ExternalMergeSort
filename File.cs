@@ -9,6 +9,7 @@ namespace ExternalMergeSort
     class File
     {
         public Block[] Blocks;
+        public uint nData => nBlocks*blockSize;
         public readonly uint nBlocks;
         public readonly uint blockSize;
 

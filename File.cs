@@ -24,5 +24,7 @@ namespace ExternalMergeSort
                 Blocks[i] = new Block(blockSize, initializer);
             }
         }
+
+        //TODO: add a print function
     }
 }

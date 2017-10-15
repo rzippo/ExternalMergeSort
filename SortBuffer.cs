@@ -8,6 +8,7 @@ namespace ExternalMergeSort
 {
     class SortBuffer
     {
+        //TODO: add file tracking, handling of partial files and unused blocks
 
         public Block[] BufferBlocks;
         internal readonly long nBlocks;

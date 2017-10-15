@@ -8,6 +8,8 @@ namespace ExternalMergeSort
 {
     partial class Program
     {
+        //TODO: add block transfer counting to evaluate performance
+
         public File ExternalMergeSort(File sourceFile, uint bufferSize)
         {
             //Check wether there is enough blocks in the buffer?
